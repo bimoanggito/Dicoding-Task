@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: Arial, Helvetica, sans-serif; margin:0}
+
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+.slideshow {
+  max-width: 100%;
+  height: 50%;
+  position: relative;
+  margin: auto;
+}
+
+.responsive {
+  height: 100%;
+  width: 100%;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.slidertext {
+  color: #f2f2f2;
+  background-color: #d9d9d9;
+  background: rgba(0,0,0,0.80);
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+.headtext {
+color: #ffffff;
+background-color: #4d79ff;
+text-align: center;
+font-size: 28px;
+font-family: "Courier New";
+font-weight: bold;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.4;
+}
+
+.fp-text {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+text-align: center;
+color: #ffffff;
+font-family: sans-serif, serif;
+font-size: 50px;
+}
+
+.fp-text2 {
+position: absolute;
+  bottom: 10%;
+  right: 16px;
+text-align: center;
+color: #ffffff;
+font-family: sans-serif, serif;
+font-size: 35px;
+font-style: oblique;
+}
+
+.body-text {
+  position: absolute;
+  width: 100%;
+  text-align: justify;
+  color: #ffffff;
+  font-family: sans-serif, serif;
+  font-size: 21px;
+  background-image: url("bg-img.jpg");
+
+height: 100%;
+
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.body-text2 {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+  font-family: sans-serif, serif;
+  font-size: 30px;
+  background-image: url("wall1.jpg");
+
+height: 100%;
+
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.bruh-text {
+  position: absolute;
+  width: auto;
+  height: auto;
+  text-align: justify;
+  font-size: 20px;
+  margin-top: 28%;
+  margin-right: 3%;
+  margin-left: 3%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
+}
+
+.bruh-text2 {
+  position: absolute;
+  width: auto;
+  height: auto;
+  text-align: justify;
+  font-size: 20px;
+  margin-top: 30%;
+  margin-right: 3%;
+  margin-left: 3%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #f2f2f2;
+  color: #000000;
+  text-align: center;
+}
+
+</style>
+</head>
+<body>
+<div class="headtext">Hey You! Welcome to My Page!</div>
+<div class="slideshow">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 2</div>
+  <img src="wall2.jpg" class="responsive">
+  <div class="overlay"></div>
+  <div class="fp-text">"The arcana is the means by which all is revealed. One of life's greatest blessing is the freedom to pursue one's goal..."</style></div>
+  <div class="fp-text2">-Nyx Avatar, "Persona 3"</style></div>
+  <div class="slidertext">About Me</div>
+  <div class="body-text">
+      <img src="profpic.jpg" alt="profile picture" max-width=400px height=400px style="border-radius: 50%; padding:12px; float: left">
+      <h1>My Profile</h1>
+      <p>
+        Name : Timotius Bimo Anggito <hr style="margin-right: 5%;">
+        Age : 19 <hr style="margin-right: 5%;">
+        Occupation : College Student at Univeritas Esa Unggul<hr style="margin-right: 5%;">
+        Major : Information Technology<hr style="margin-right: 5%;">
+        E-mail : bimoanggito@gmail.com<hr style="margin-right: 5%;">
+        Status : Junior Web Developer <hr style="margin-right: 5%;">
+      </p>
+    </div>
+    <div class="bruh-text">
+        <p style="background-color: rgba(0,0,0,0.5);">
+          Nama saya Timotius Bimo Anggito. Saya berusia 19 tahun. Rumah saya berada bagian utara kota Bekasi, di mana terdapat banyak daerah perumahan, dan saya belum menikah. Saya sedang belajar di Universitas Esa Unggul sebagai mahasiswa Teknik Informatika, dan saya pulang ke rumah paling telat jam 8 malam. Saya tidak merokok dan tidak minum-minum. Saya sudah di tempat tidur jam 10 malam, dan memastikan untuk mendapatkan 8 jam tidur, apapun yang terjadi. Setelah meminum satu gelas susu hangat dan melakukan pemanasan selama 20 menit sebelum tidur, saya biasanya tidak punya masalah tidur sampai pagi. Seperti bayi, saya bangun di pagi hari tanpa kelelahan dan stres. Saya diberitahu oleh dokter bahwa tidak ada masalah saat terakhir kali melakukan pengecekan kondisi kesehatan. Saya mencoba untuk menerangkan bahwa saya adalah orang yang ingin hidup dalam kehidupan yang damai. Saya mencoba untuk tidak mencari masalah dengan musuh apapun, sama seperti menang atau kalah, hal itu akan membuat saya kurang tidur pada malam hari. Begitulah cara saya berhubungan dengan masyarakat, dan saya tau hal itu akan membuat saya bahagia. Meskipun, jika saya harus berjuang saya tidak akan kalah dari siapapun.
+        </p>
+    </div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 2</div>
+  <img src="wall3.jpg" class="responsive">
+  <div class="overlay"></div>
+  <div class="fp-text">"Blood leads only to blood, and violence begets violence. Nothing more. Revenge is simply another name for murder."</style></div>
+  <div class="fp-text2">King Deghinsea, "Fire Emblem: Path of Radiance"</style></div>
+  <div class="slidertext">What's this page for?</div>
+  <div class="body-text2"><p>
+      <img src="dicoding.jpg" alt="dicoding" max-width=300px height=300px style="display: block; margin-left: auto; margin-right: auto; border-radius: 50%; padding:12px;;">Page ini untuk apa?</p></div>
+  <div class="bruh-text2">
+      <p style="background-color: rgba(0,0,0,0.8);">
+       Page ini merupakan tugas dari online class dicoding yang diberikan gratis bagi peserta ID-Camp dari indosat ooredoo. Setelah belajar selama satu bulan, saya akhirnya dapat menghasilkan sebuah website yang berfungsi sebagai page bio data berdasarkan tugas submission dari dicoding online class "Belajar dasar pemrograman web". 
+      </p>
+  </div>
+</div>
+
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  slides[slideIndex-1].style.display = "block";
+}
+</script>
+</div>
+<div class="footer">
+  <p>
+      You could also reach me on : <br><br>
+      <a href="https://github.com/Lute2703">
+        <img alt="github" src="git.png" width="50" height="50" style="margin: auto;">
+        <a href="https://instagram.com/bimoanggito">
+          <img alt="instagram" src="ig.png" width="50" height="50" style="margin: auto;">
+          <a href="https://www.linkedin.com/in/timotius-bimo-3694b5117">
+          <img alt="linkedin" src="in.png" width="50" height="50" style="margin: auto;">
+  </p>
+  </div>
+</body>
+</html> 
